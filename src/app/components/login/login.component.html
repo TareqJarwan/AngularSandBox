@@ -1,0 +1,36 @@
+<div class="row pt-5">
+  <div class="col-md-6 mx-auto">
+    <section class="form-simple p-5">
+      <mdb-card>
+        <div class="header pt-3 grey lighten-2">
+          <div class="row d-flex justify-content-start">
+            <h3 class="text-dark font-weight-bold  mt-3 mb-4 pb-1 mx-auto text-center">Log in</h3>
+          </div>
+        </div>
+        <mdb-card-body class="mx-4 mt-4">
+          <form [formGroup]="simpleForm">
+            <div class="md-form">
+              <input type="text" id="simpleFormEmailEx" class="form-control" formControlName="simpleFormEmailEx"
+                mdbInputDirective>
+              <label for="simpleFormEmailEx">Your email</label>
+            </div>
+            <div class="md-form pb-3">
+              <input type="password" id="simpleFormPasswordEx" class="form-control" formControlName="simpleFormPasswordEx"
+                mdbInputDirective>
+              <label for="simpleFormPasswordEx">Your password</label>
+              <p class="font-small grey-text d-flex justify-content-end">Forgot
+                <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
+              </p>
+            </div>
+          </form>
+          <div class="text-center mb-4">
+            <button type="button" mdbBtn color="blue" block="true" class="z-depth-2" mdbWavesEffect>Log in</button>
+          </div>
+          <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
+            <a href="#" class="dark-grey-text font-weight-bold ml-1"> Sign up</a>
+          </p>
+        </mdb-card-body>
+      </mdb-card>
+    </section>
+  </div>
+</div>
