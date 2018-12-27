@@ -10,6 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DriversComponent } from './components/drivers/drivers.component';
 import { DriverDetailsComponent } from './components/driver-details/driver-details.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { DriverDetailsComponent } from './components/driver-details/driver-detai
     LoginComponent,
     DashboardComponent,
     DriversComponent,
-    DriverDetailsComponent
+    DriverDetailsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
